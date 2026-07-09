@@ -1,0 +1,55 @@
+import { User, UserType } from "../entity/User";
+import bcrypt from "bcrypt";
+
+export const DEFAULT_USERS: Partial<User>[] = [
+  {
+    id: 1,
+    first_name: "Anubhav",
+    last_name: "Patra",
+    username: "anubhav_patra",
+    email: "anubhav@gmail.com",
+    password: bcrypt.hashSync("Password@123", 10),
+    role: UserType.HIRER,
+    phone: "",
+  },
+  {
+    id: 2,
+    first_name: "Samin",
+    last_name: "Rahman",
+    username: "samin_rahman",
+    email: "samin@gmail.com",
+    password: bcrypt.hashSync("Password@123", 10),
+    role: UserType.HIRER,
+    phone: "",
+  },
+  {
+    id: 3,
+    first_name: "Elon",
+    last_name: "Musk",
+    username: "elon_musk",
+    email: "elon@gmail.com",
+    password: bcrypt.hashSync("Password@123", 10),
+    role: UserType.VENDOR,
+    phone: "",
+  },
+  {
+    id: 4,
+    first_name: "John",
+    last_name: "Smith",
+    username: "john_smith",
+    email: "john@gmail.com",
+    password: bcrypt.hashSync("Password@123", 10),
+    role: UserType.VENDOR,
+    phone: "",
+  },
+  {
+    id: 5,
+    first_name: "Sam",
+    last_name: "Wilson",
+    username: "sam_wilson",
+    email: "sam@gmail.com",
+    password: bcrypt.hashSync("Password@123", 10),
+    role: UserType.VENDOR,
+    phone: "",
+  },
+];

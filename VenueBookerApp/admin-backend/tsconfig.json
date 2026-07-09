@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    //typescript compiles it to common js
+    "module": "commonjs",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "..",
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@admin-shared/*": ["../admin-shared/*"],
+      "@admin-shared/types" : ["../admin-shared/types/index.d.ts"]
+    },
+  },
+  "include": [
+    "src/**/*",
+    "../admin-shared/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

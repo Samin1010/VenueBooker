@@ -1,0 +1,28 @@
+# Dependencies
+**/node_modules/
+**/.pnp
+**/.pnp.*
+
+# Next.js
+**/.next/
+**/out/
+
+# Env & Debug
+**/.env*
+!**/.env.example
+**/*.log
+**/.DS_Store
+
+sample.txt
+main.js
+
+./main.sql
+./main2.sql
+
+/useless
+/useless1
+/example1
+
+/backend/dist
+/admin-backend/dist
+/lectorial11
